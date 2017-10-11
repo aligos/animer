@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Animer Senpai</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	  rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/tachyons.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.10&appId=1100385176700047";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+</head>
+<body>
+	<section class="header-section">
+		<a class="link white b f3 tc db" href="/" title="Home"><div class="logo-admin tc"><img src="/assets/img/logo-white.png"></div></a>		
+	</section>
+	<section class="waifu-section center pv0 db mw6">
+		<article class="w-100-ns mw8 center-ns mh2 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+			<div class="pa2 ph3-ns pb3-ns">
+				<div class="waifu-image justify-center flex">
+					<img class="mw5 h5" src="/assets/img/sinon.jpg">
+				</div>
+		  	</div>
+		  	<div class="pa2 ph3-ns pb3-ns">
+			  	<h1 class="title-light-red tc f3-ns f4 bg-transparent mw8 mb0 mt0 pa3-ns pa2 mh1-ns mh2">Sinon</h1>
+				<div class="waifu-image justify-center flex">
+					<span>SAO/Sword Art Online</span>
+				</div>
+				<div class="waifu-btn-generate center w-100 tc pa3-ns pa2">
+					<a href="#" id="shareBtn" class="ttu f6 link dim ph3 ph4-ns br2 pv2 mb2 dib white bg-light-red"><i class="f6 v-mid material-icons">share</i> Share</a>
+				</div>
+		 	</div>
+		</article>
+		<div id="shareModal" class="modal">
+			<article class="w-100-ns mw6 center-ns mh2 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+			    <div class="tc">
+					<h1 class="f3 mb2">Share</h1>
+					<h2 class="f5 fw4 gray mt0">Copy paste link berikut dan share ketemanmu ;)</h2>
+					<input type="text" id="sharelink" class="br1 mw-100 pa2 input-reset ba b--light-gray outline-0 b-focus-red bg-white hover-bg-white w-100" value="http://localhost/837ec5754f503cfaaee0929fd48974e7" />
+					<span style="display: none;" id="copied" class="bg-light-red white mw3 br1">copied</span>
+					<span class="b black-70 mw3 br1">Atau</span>
+			  	</div>
+
+			  	<div class="waifu-btn-generate center w-100 tc pa3-ns pa2">
+					<a class="link dib" href="//www.facebook.com/sharer/sharer.php?u=http://localhost/837ec5754f503cfaaee0929fd48974e7"><img class="h1 dib" src="/assets/img/facebook.svg"><span class="ml1 h1 v-top black-70 dib">Share</span></a>
+				</div>
+			</article>
+		</div>
+	</section>
+	<footer class="cf footer mt4">
+		<nav class="footer-nav">
+			<div class="tc pa2">
+				<a class="link dim-light nav-link f6 f5-ns dib mr3" href="/detail.html" title="Wiki"><i class="f6 f5-ns v-mid material-icons">find_in_page</i> Wiki</a>
+				<a class="link dim-light nav-link f6 f5-ns dib mr3" href="/trending.html" title="Trending"><i class="f6 f5-ns v-mid material-icons">trending_up</i> Trending</a>
+				<a class="link dim-light nav-link f6 f5-ns dib mr3" href="/season.html" title="Season"><i class="f6 f5-ns v-mid material-icons">cloud_queue</i> Season</a>
+			</div>
+		</nav>
+
+		<div class="content db">
+			<div class="db fb-page" data-href="https://www.facebook.com/AnimerIndonesia/" data-width="300" data-height="154" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/AnimerIndonesia/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AnimerIndonesia/">Animer ID</a></blockquote></div>
+			<span class="db pa2 white f6 b" target="_blank">Animer Indonesia ©2015 All Rights Reserved.</span>
+		</div>
+	</footer>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('shareModal');
+		var btn = document.getElementById("shareBtn");
+		var inputlink = document.getElementById("sharelink");
+		var copied = document.getElementById("copied");
+
+		inputlink.onclick = function() {
+			this.select();
+			document.execCommand('copy');
+			setTimeout(function() {
+				copied.style.display = "block";
+			}, 200)
+			// setTimeout(function() {
+			// 	copied.style.display = "none";
+			// }, 2000)
+		}
+
+		btn.onclick = function() {
+		    modal.style.display = "block";
+		}
+
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		}
+		</script>
+</body>
+</html>

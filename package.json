@@ -1,0 +1,26 @@
+{
+  "name": "animer",
+  "version": "1.0.0",
+  "description": "animer frontend",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aligos/animer.git"
+  },
+  "keywords": [
+    "anime"
+  ],
+  "author": "Rahmat Aligos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aligos/animer/issues"
+  },
+  "homepage": "https://github.com/aligos/animer#readme"
+}
