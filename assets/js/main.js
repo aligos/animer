@@ -22,7 +22,7 @@ $(document).ready(function() {
 		genre.select2();
 	}
 
-	$('.owl-carousel').owlCarousel({
+	$('.owl-carousel').owlCarousel({		
 		merge:true,
 		loop:true,
 		margin:10,
@@ -51,4 +51,5 @@ $(document).ready(function() {
 	$('.owl-next').empty();
 	$('.owl-prev').append('<i class="material-icons">keyboard_arrow_left</i>');
 	$('.owl-next').append('<i class="material-icons">keyboard_arrow_right</i>');
+	window.dispatchEvent(new Event('resize'));
 });
