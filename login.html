@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Animer Senpai</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	  rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/assets/css/tachyons.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<header class="header-addnew waifu-section center pv0 pa4 flex-ns mw7 pa4-ns">
+		<div class="logo-admin w-100 pa2 tc"><img src="/assets/img/logo.png"></div>
+	</header>
+	<section class="waifu-section center pv0 flex-ns mw8">
+		<main class="ph4 black-80 center">			
+			<form class="wiki-form measure-narrow">
+				<fieldset id="new_wiki" class="ba b--transparent ph0 mh0">
+				  <div class="mt3">
+					<label class="db fw6 lh-copy f6" for="title">Username</label>
+					<input class="br1 mw-100 pa2 input-reset ba b--light-gray outline-0 b-focus-red bg-white hover-bg-white w-100" type="text" name="title"  id="title" placeholder="username" required>
+				  </div>
+				  <div class="mt3">
+					<label class="db fw6 lh-copy f6" for="password">Password</label>
+					<input class="br1 mw-100 pa2 input-reset ba b--light-gray outline-0 b-focus-red bg-white hover-bg-white w-100" type="password" name="password"  id="password" placeholder="password" required>
+				  </div>
+				</fieldset>
+				<div class="tc">
+				  <input class="white br1 ph3 ph4-ns pv2 input-reset ba b--light-red bg-light-red pointer f6 dib" type="submit" value="Log in">
+				</div>
+			</form>
+			<div class="social-login tc">
+				<div class="login-or">
+					<hr class="hr-or">
+					<span class="span-or">or</span>
+				</div>
+				<button class="fb-login light-blue br2 pa2 ph3-ns bg-white ba b--blue pointer">
+					<img class="h1 dib v-btm" src="/assets/img/facebook.svg">
+					Login with Facebook
+				</button>
+			</div>
+		</main>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+</html>
